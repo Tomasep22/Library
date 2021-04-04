@@ -1,0 +1,41 @@
+
+.container {
+    height: 800px;
+    width: 100%;
+    border: 7px solid brown;
+    display: inline-flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.inputs {
+    height: 800px;
+    width: 200px;
+    border: 5px solid pink;
+    text-align: center;
+}
+
+.books {
+    display: flex;
+    height: 800px;
+    width: auto;
+    border: 5px solid blue;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 100px;
+    margin-left: 50px;
+    
+}
+
+.book {
+    height: calc(100% - 40px);
+    width: 200px;
+    border: 2px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 100;
+    flex: 1;
+}
+
