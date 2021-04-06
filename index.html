@@ -8,9 +8,27 @@
         <div>header</div>
         <h2>My Books</h2>
         <div class="container">
-        <div class='inputs'>Here will go the inputs</div>
+        <div class='inputs'>
+            <form name='newBook'>
+                <label for='title'>
+                    <input class='input' id='title' name='title' type="text" placeholder="title">
+                </label>
+                <label for='author'>
+                    <input class='input' id='author' name='author' type="text" placeholder="author">
+                </label>
+                <label for='pages'>
+                    <input class='input' id='pages' name='pages' type="number" placeholder="number of pages">
+                </label>
+                <label for='read'>
+                    <input class='input' id='read' name='read' type="checkbox">Read
+                </label>
+                <button name='addBook' type='submit'>Add Book
+                </button>
+            </form>
+        </div>
         <div class='books'>
         </div>
+        <div class='info'>here books info will be displayed</div>
         </div>
         <div>footer</div>
         <script src="script.js"></script>

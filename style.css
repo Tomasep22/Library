@@ -1,29 +1,32 @@
+body {
+    background: url(https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
 
 .container {
-    height: 800px;
+    height: 500px;
     width: 100%;
     border: 7px solid brown;
-    display: inline-flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    display: flex;
 }
 
 .inputs {
-    height: 800px;
+    height: 95%;
     width: 200px;
     border: 5px solid pink;
     text-align: center;
+    flex: 1;
+    background: yellow 
 }
 
 .books {
     display: flex;
-    height: 800px;
+    height: 95%;
     width: auto;
     border: 5px solid blue;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 100px;
-    margin-left: 50px;
+    flex: 2;
+    background: url(https://images.pexels.com/photos/6664543/pexels-photo-6664543.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
     
 }
 
@@ -34,8 +37,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 100;
-    flex: 1;
+    background: url(https://images.pexels.com/photos/942872/pexels-photo-942872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) bottom;
+    cursor: pointer;
+    min-width: 168.5px;
+    
+}
+
+.info {
+    height: 95%;
+    width: 200px;
+    border: 5px solid pink;
+    text-align: center;
+    justify-self: right;
+    align-self: right;
+    flex: 2;
+    background:tomato
+    
 }
 
