@@ -1,31 +1,42 @@
 body {
     background: url(https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    color: blanchedalmond;
 }
 
 .container {
     height: 500px;
     width: 100%;
-    border: 7px solid brown;
     display: flex;
 }
 
 .inputs {
     height: 95%;
     width: 200px;
-    border: 5px solid pink;
     text-align: center;
     flex: 1;
-    background: yellow 
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
 }
+
+.input {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
 .books {
     display: flex;
     height: 95%;
     width: auto;
-    border: 5px solid blue;
     overflow-x: scroll;
     overflow-y: hidden;
     flex: 2;
+    user-select: none;
     background: url(https://images.pexels.com/photos/6664543/pexels-photo-6664543.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
     
 }
@@ -33,27 +44,42 @@ body {
 .book {
     height: calc(100% - 40px);
     width: 200px;
-    border: 2px solid black;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: 100;
-    background: url(https://images.pexels.com/photos/942872/pexels-photo-942872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) bottom;
+    background: url(https://cdn.pixabay.com/photo/2018/01/03/09/09/book-3057902_960_720.png) space;
     cursor: pointer;
     min-width: 168.5px;
-    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.display {
+    align-self: center;
 }
 
 .info {
     height: 95%;
     width: 200px;
-    border: 5px solid pink;
     text-align: center;
     justify-self: right;
     align-self: right;
     flex: 2;
-    background:tomato
-    
+    background:url(https://cdn.pixabay.com/photo/2012/12/06/06/27/paper-68829_960_720.jpg) round;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
+
+.info > * {
+    display: flex;
+    margin-left: 10px;
+    color: white;
+    font-size: large;
+  }
 
