@@ -3,34 +3,38 @@
 <meta charset="utf-8">
 <title>Library</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>header</div>
+        <nav></nav>
         <h2>My Books</h2>
         <div class="container">
         <div class='inputs'>
-            <form name='newBook'>
-                <label for='title'>
-                    <input class='input' id='title' name='title' type="text" placeholder="Title" required>
+            <form class='formInputs' name='newBook'>
+                <label class="input label label1" for='title'>
+                    <input class='input input1' id='title' name='title' type="text" placeholder="Title" required>
                 </label>
-                <label for='author'>
-                    <input class='input' id='author' name='author' type="text" placeholder="Author" required>
+                <label class="input label label2" for='author'>
+                    <input class='input input2' id='author' name='author' type="text" placeholder="Author" required>
                 </label>
-                <label for='pages'>
-                    <input class='input' id='pages' name='pages' type="number" placeholder="Number of pages">
+                <label class="input label label3" for='pages'>
+                    <input class='input input3' id='pages' name='pages' type="number" placeholder="Number of pages">
                 </label>
-                <label for='read'>
-                    <input class='input' id='read' name='read' type="checkbox">Read
+                <input class='input input4' id='read' name='read' type="checkbox">
+                 <label class="input label label4" for='read'>
                 </label>
-                <button name='addBook' type='submit'>Add Book
+                <button class='addBtn input' name='addBook' type='submit'>Add Book
                 </button>
             </form>
         </div>
         <div class='books'>
         </div>
-        <div class='info'></div>
+        <div class='info'>
+            <h2>Click On a book to display its info</h2>
         </div>
-        <div>footer</div>
+        </div>
+        <footer></footer>
         <script src="script.js"></script>
     </body>
 </html>
