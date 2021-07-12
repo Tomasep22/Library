@@ -8,15 +8,23 @@ let scrollLeft;
 
 let myLibrary = JSON.parse(localStorage.getItem('items')) || [];
 
+class Book {
+  constructor(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+  }
+}
 
-var Book = {
+/*var Book = {
   init: function(title, author, pages, read) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
   }  
-};
+};*/
 
 
 function addBookToLibrary(book) {
@@ -88,8 +96,8 @@ document.newBook.addEventListener('submit', function(e) {
   const author = this.author.value;
   const pages = this.pages.value;
   const read = this.read.checked ? 'Read' : 'Not read yet' 
-  let book = Object.create(Book)
-  book.init(title, author, pages, read)
+  let book = new Book(title, author, pages, read)
+  // book.init(title, author, pages, read)
   addBookToLibrary(book);
   this.reset();
 })
